@@ -4,10 +4,11 @@
   "description": "uploader images with preview for backpack crud",
   "license": "MIT",
   "keywords": ["backpack","laravel","image"],
+  "homepage": "https://github.com/johangit/backpack-image-uploader",
   "authors": [
     {
       "name": "johan",
-      "email": "johan@localhost"
+      "email": "misha2web@yandex.ru"
     }
   ],
   "autoload": {
