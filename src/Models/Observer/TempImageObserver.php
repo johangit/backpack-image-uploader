@@ -9,6 +9,7 @@ class TempImageObserver
     public function saving(TempImage $image)
     {
         $image->identify = md5(uniqid());
+        $image->user_id = auth()->check() ? auth()->getUser()->id : null;
     }
 
     public function saved(TempImage $image)
