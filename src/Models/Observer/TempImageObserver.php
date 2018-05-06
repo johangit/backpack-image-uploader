@@ -13,11 +13,15 @@ class TempImageObserver
 
     public function saved(TempImage $image)
     {
-        $date = new \Carbon\Carbon('10 day ago');
+        $date = new \Carbon\Carbon('1 day ago');
 
-        TempImage::where("created_at", "<", $date->toDateString())
+        $images = TempImage::where("created_at", "<", $date)
             ->take(100)
-            ->delete();
+            ->get();
+
+        foreach ($images as $image) {
+            $image->delete();
+        }
     }
 
     public function deleting(TempImage $image)
