@@ -60,8 +60,8 @@ $value = json_encode($value);
         </div>
 
         <div class="images-with-preview__controls">
-            <button class="js-images-with-preview__remove-all btn btn-sm btn-default">remove all</button>
-            <button class="js-images-with-preview__add-new btn btn-sm btn-default">add</button>
+            <button type="button" class="js-images-with-preview__remove-all btn btn-sm btn-default">remove all</button>
+            <button type="button" class="js-images-with-preview__add-new btn btn-sm btn-default">add</button>
         </div>
 
 
