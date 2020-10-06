@@ -1,3 +1,5 @@
+**This package is not maintained now**
+
 # Laravel Backpack image uploader widget
 
 Images uploader with preview for backpack crud.
